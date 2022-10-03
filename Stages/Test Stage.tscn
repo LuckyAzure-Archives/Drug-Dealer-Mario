@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/Mario/Mario.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Stages/Ground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Camera.gd" type="Script" id=3]
+[ext_resource path="res://Stages/Test Stage.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/HUD/HUD.tscn" type="PackedScene" id=5]
+
+[node name="Test Stage" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="CanvasLayer2" parent="." instance=ExtResource( 5 )]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 480, 272 )
+rotating = true
+current = true
+script = ExtResource( 3 )
+
+[node name="Mario" parent="." instance=ExtResource( 1 )]
+position = Vector2( 416, 74 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64, 192 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 470, 199 )
+rotation = -0.345575
+
+[node name="Ground2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 768, 128 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 320, 128 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 9.0
+margin_top = 58.0
+margin_right = 207.0
+margin_bottom = 123.0
+text = "x:
+y:
+jump:
+"
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 192, 255 )
+
+[node name="Position2D" type="Position2D" parent="."]
+z_index = -1000
+
+[node name="ColorRect" type="ColorRect" parent="Position2D"]
+margin_left = -115.0
+margin_top = -62.0
+margin_right = 1055.0
+margin_bottom = 620.0
+color = Color( 0.196078, 0.196078, 0.196078, 1 )

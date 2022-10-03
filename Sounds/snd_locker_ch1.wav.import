@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snd_locker_ch1.wav-25d03e620c858f60d2c0dbd5ffd15b5c.sample"
+
+[deps]
+
+source_file="res://Sounds/snd_locker_ch1.wav"
+dest_files=[ "res://.import/snd_locker_ch1.wav-25d03e620c858f60d2c0dbd5ffd15b5c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

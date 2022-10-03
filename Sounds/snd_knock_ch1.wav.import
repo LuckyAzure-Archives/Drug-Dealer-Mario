@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snd_knock_ch1.wav-22643237a1f81c9991ea35eb4ea7ae98.sample"
+
+[deps]
+
+source_file="res://Sounds/snd_knock_ch1.wav"
+dest_files=[ "res://.import/snd_knock_ch1.wav-22643237a1f81c9991ea35eb4ea7ae98.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

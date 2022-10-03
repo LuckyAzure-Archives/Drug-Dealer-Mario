@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Resident Evil 2 OST 11 Secure Place.wav-a87489f654983415d9972b8092d1b72b.sample"
+
+[deps]
+
+source_file="res://Title-Menu/Resident Evil 2 OST 11 Secure Place.wav"
+dest_files=[ "res://.import/Resident Evil 2 OST 11 Secure Place.wav-a87489f654983415d9972b8092d1b72b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

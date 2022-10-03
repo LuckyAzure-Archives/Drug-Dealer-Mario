@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/smw_jump.wav-e9d48313c1963e4cff38e54185df16ba.sample"
+
+[deps]
+
+source_file="res://Sounds/Mario/smw_jump.wav"
+dest_files=[ "res://.import/smw_jump.wav-e9d48313c1963e4cff38e54185df16ba.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

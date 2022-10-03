@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Stages/Tamas-Boss/arena.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 481, 159.5 )
+
+[node name="Arena" type="Sprite"]
+texture = ExtResource( 1 )
+
+[node name="Arena" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena"]
+position = Vector2( 0, 0.5 )
+shape = SubResource( 1 )

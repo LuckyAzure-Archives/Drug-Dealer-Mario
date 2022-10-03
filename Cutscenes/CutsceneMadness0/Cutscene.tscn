@@ -1,0 +1,127 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Scripts/Camera.gd" type="Script" id=1]
+[ext_resource path="res://Music/Perdition instrumental.mp3" type="AudioStream" id=2]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/Cutscene.gd" type="Script" id=3]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall1.png" type="Texture" id=4]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall2.png" type="Texture" id=5]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall0.png" type="Texture" id=6]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall3.png" type="Texture" id=7]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall5.png" type="Texture" id=8]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall7.png" type="Texture" id=9]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/facility.png" type="Texture" id=10]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall4.png" type="Texture" id=11]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall6.png" type="Texture" id=12]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/fall8.png" type="Texture" id=13]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/here.png" type="Texture" id=14]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/rocks.png" type="Texture" id=15]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/back0.png" type="Texture" id=16]
+[ext_resource path="res://Cutscenes/CutsceneMadness0/glow.png" type="Texture" id=17]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CanvasItemMaterial" id=3]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 9
+particles_anim_loop = true
+
+[sub_resource type="Curve" id=4]
+min_value = -360.0
+max_value = 360.0
+_data = [ Vector2( 0, -148.091 ), 0.0, 0.0, 0, 0, Vector2( 1, 81 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 4 )
+
+[sub_resource type="Gradient" id=6]
+offsets = PoolRealArray( 0, 0.953069, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
+
+[sub_resource type="ParticlesMaterial" id=2]
+flag_disable_z = true
+direction = Vector3( 10, 10, 0 )
+spread = 31.51
+gravity = Vector3( 0, 40, 0 )
+initial_velocity = 275.0
+angular_velocity = 288.0
+angular_velocity_random = 1.0
+angular_velocity_curve = SubResource( 5 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 7 )
+anim_offset = 1.0
+anim_offset_random = 1.0
+
+[node name="Cutscene" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 10.0
+margin_top = 58.0
+margin_right = 208.0
+margin_bottom = 123.0
+text = "x:
+y:
+jump:
+"
+
+[node name="Fade" type="ColorRect" parent="CanvasLayer"]
+visible = false
+margin_right = 960.0
+margin_bottom = 540.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 480, 270 )
+rotating = true
+current = true
+script = ExtResource( 1 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+
+[node name="mariofallin" type="AnimatedSprite" parent="."]
+position = Vector2( 240, 135 )
+frames = SubResource( 1 )
+centered = false
+
+[node name="Glow" type="Sprite" parent="mariofallin"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -20.5, -34.5 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Falling Rocks" type="Particles2D" parent="."]
+material = SubResource( 3 )
+position = Vector2( -413, -430 )
+amount = 32
+lifetime = 5.0
+visibility_rect = Rect2( -1000, -1000, 2000, 7000 )
+process_material = SubResource( 2 )
+texture = ExtResource( 15 )
+
+[node name="Facility" type="Sprite" parent="."]
+position = Vector2( 570, 1010 )
+z_index = -5
+texture = ExtResource( 10 )
+
+[node name="Back0" type="Sprite" parent="."]
+visible = false
+position = Vector2( 240, 137 )
+scale = Vector2( 0.5, 0.5 )
+z_index = -5
+texture = ExtResource( 16 )

@@ -1,0 +1,179 @@
+[gd_scene load_steps=85 format=2]
+
+[ext_resource path="res://Stages/Tamas-Boss/Boss.gd" type="Script" id=1]
+[ext_resource path="res://Stages/Tamas-Boss/Arena.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/HUD/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Mario/Mario.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Camera.gd" type="Script" id=5]
+[ext_resource path="res://Music/Original Melodic⧸Symphonic Metal Instrumental.wav" type="AudioStream" id=6]
+[ext_resource path="res://Stages/Tamas-Boss/Tamás/LowLeg.png" type="Texture" id=7]
+[ext_resource path="res://Stages/Tamas-Boss/Tamás/RightArm0.png" type="Texture" id=8]
+[ext_resource path="res://Stages/Tamas-Boss/Tamás/head0.png" type="Texture" id=9]
+[ext_resource path="res://Stages/Tamas-Boss/Tamás/LeftArm0.png" type="Texture" id=10]
+[ext_resource path="res://Stages/Tamas-Boss/Tamás/Torso.png" type="Texture" id=11]
+[ext_resource path="res://Stages/Tamas-Boss/Tamás/HighLeg.png" type="Texture" id=12]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (1).png" type="Texture" id=13]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (2).png" type="Texture" id=14]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (59).png" type="Texture" id=15]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (71).png" type="Texture" id=16]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (45).png" type="Texture" id=17]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (40).png" type="Texture" id=18]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (61).png" type="Texture" id=19]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (38).png" type="Texture" id=20]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (43).png" type="Texture" id=21]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (46).png" type="Texture" id=22]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (48).png" type="Texture" id=23]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (51).png" type="Texture" id=24]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (56).png" type="Texture" id=25]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (62).png" type="Texture" id=26]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (47).png" type="Texture" id=27]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (54).png" type="Texture" id=28]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (57).png" type="Texture" id=29]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (60).png" type="Texture" id=30]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (65).png" type="Texture" id=31]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (58).png" type="Texture" id=32]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (66).png" type="Texture" id=33]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (50).png" type="Texture" id=34]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (41).png" type="Texture" id=35]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (44).png" type="Texture" id=36]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (63).png" type="Texture" id=37]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (68).png" type="Texture" id=38]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (69).png" type="Texture" id=39]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (55).png" type="Texture" id=40]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (52).png" type="Texture" id=41]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (49).png" type="Texture" id=42]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (42).png" type="Texture" id=43]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (39).png" type="Texture" id=44]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (53).png" type="Texture" id=45]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (64).png" type="Texture" id=46]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (67).png" type="Texture" id=47]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (70).png" type="Texture" id=48]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (35).png" type="Texture" id=49]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (6).png" type="Texture" id=50]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (31).png" type="Texture" id=51]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (18).png" type="Texture" id=52]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (14).png" type="Texture" id=53]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (34).png" type="Texture" id=54]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (33).png" type="Texture" id=55]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (9).png" type="Texture" id=56]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (36).png" type="Texture" id=57]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (37).png" type="Texture" id=58]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (4).png" type="Texture" id=59]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (10).png" type="Texture" id=60]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (3).png" type="Texture" id=61]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (5).png" type="Texture" id=62]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (7).png" type="Texture" id=63]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (11).png" type="Texture" id=64]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (13).png" type="Texture" id=65]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (17).png" type="Texture" id=66]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (20).png" type="Texture" id=67]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (21).png" type="Texture" id=68]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (25).png" type="Texture" id=69]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (19).png" type="Texture" id=70]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (26).png" type="Texture" id=71]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (29).png" type="Texture" id=72]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (28).png" type="Texture" id=73]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (27).png" type="Texture" id=74]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (12).png" type="Texture" id=75]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (16).png" type="Texture" id=76]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (22).png" type="Texture" id=77]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (23).png" type="Texture" id=78]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (8).png" type="Texture" id=79]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (24).png" type="Texture" id=80]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (30).png" type="Texture" id=81]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (32).png" type="Texture" id=82]
+[ext_resource path="res://Stages/Tamas-Boss/Sky/f (15).png" type="Texture" id=83]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 61 ), ExtResource( 59 ), ExtResource( 62 ), ExtResource( 50 ), ExtResource( 63 ), ExtResource( 79 ), ExtResource( 56 ), ExtResource( 60 ), ExtResource( 64 ), ExtResource( 75 ), ExtResource( 65 ), ExtResource( 53 ), ExtResource( 83 ), ExtResource( 76 ), ExtResource( 66 ), ExtResource( 52 ), ExtResource( 70 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 80 ), ExtResource( 69 ), ExtResource( 71 ), ExtResource( 74 ), ExtResource( 73 ), ExtResource( 72 ), ExtResource( 81 ), ExtResource( 51 ), ExtResource( 82 ), ExtResource( 55 ), ExtResource( 54 ), ExtResource( 49 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 20 ), ExtResource( 44 ), ExtResource( 18 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 21 ), ExtResource( 36 ), ExtResource( 17 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 42 ), ExtResource( 34 ), ExtResource( 24 ), ExtResource( 41 ), ExtResource( 45 ), ExtResource( 28 ), ExtResource( 40 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 32 ), ExtResource( 15 ), ExtResource( 30 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 47 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 48 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[node name="Test Stage" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="CanvasLayer2" parent="." instance=ExtResource( 3 )]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 480, 272 )
+rotating = true
+current = true
+script = ExtResource( 5 )
+
+[node name="Mario" parent="." instance=ExtResource( 4 )]
+position = Vector2( 481, 125 )
+
+[node name="Arena" parent="." instance=ExtResource( 2 )]
+position = Vector2( 480, 451 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 9.0
+margin_top = 58.0
+margin_right = 207.0
+margin_bottom = 123.0
+text = "x:
+y:
+jump:
+"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Tamas" type="Position2D" parent="."]
+position = Vector2( 483, 454 )
+z_index = -5
+
+[node name="LowLeg2" type="Sprite" parent="Tamas"]
+position = Vector2( 127, -209 )
+rotation = -3.14159
+scale = Vector2( 1, -1 )
+texture = ExtResource( 7 )
+offset = Vector2( 0, 90 )
+
+[node name="HighLeg" type="Sprite" parent="Tamas/LowLeg2"]
+position = Vector2( 98, -148 )
+texture = ExtResource( 12 )
+offset = Vector2( -43, 56 )
+
+[node name="LowLeg" type="Sprite" parent="Tamas"]
+position = Vector2( -111, -222 )
+texture = ExtResource( 7 )
+offset = Vector2( 0, 101 )
+
+[node name="HighLeg" type="Sprite" parent="Tamas/LowLeg"]
+position = Vector2( 103, -149 )
+texture = ExtResource( 12 )
+offset = Vector2( -51, 53 )
+
+[node name="Torso" type="Sprite" parent="Tamas"]
+position = Vector2( 18, -451 )
+texture = ExtResource( 11 )
+
+[node name="LeftArm0" type="Sprite" parent="Tamas/Torso"]
+position = Vector2( -141, -69 )
+texture = ExtResource( 10 )
+offset = Vector2( -16, 177 )
+
+[node name="RightArm0" type="Sprite" parent="Tamas/Torso"]
+position = Vector2( 113, -74 )
+texture = ExtResource( 8 )
+offset = Vector2( 17, 171 )
+
+[node name="Head0" type="Sprite" parent="Tamas/Torso"]
+position = Vector2( -18, -77 )
+texture = ExtResource( 9 )
+offset = Vector2( -7, -97 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 0.290196, 0.0784314, 0.0784314, 1 )
+position = Vector2( 469, 116 )
+scale = Vector2( 5.765, 5.50148 )
+z_index = -100
+frames = SubResource( 1 )
+frame = 50
+playing = true

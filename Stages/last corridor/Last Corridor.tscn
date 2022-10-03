@@ -1,0 +1,88 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scripts/Mario/Mario.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/HUD/HUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Stages/last corridor/last-corridor1.png" type="Texture" id=3]
+[ext_resource path="res://Stages/last corridor/Last Corridor.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Camera.gd" type="Script" id=5]
+[ext_resource path="res://Stages/last corridor/last-corridor3.png" type="Texture" id=6]
+[ext_resource path="res://Stages/last corridor/last-corridor0.png" type="Texture" id=7]
+[ext_resource path="res://Stages/last corridor/last-corridor2.png" type="Texture" id=8]
+[ext_resource path="res://Music/Undertale - MEGALOVANIA {Resastered}.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Stages/last corridor/Sans.tscn" type="PackedScene" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 240, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 135 )
+
+[node name="Last Corridor" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="HUD" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 480, 272 )
+rotating = true
+current = true
+script = ExtResource( 5 )
+
+[node name="Mario" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, 243 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+z_index = -100
+frames = SubResource( 1 )
+frame = 2
+playing = true
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="AnimatedSprite"]
+position = Vector2( 104, 460 )
+scale = Vector2( 2, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/StaticBody2D"]
+position = Vector2( 188, 23 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="AnimatedSprite"]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="AnimatedSprite/StaticBody2D2"]
+position = Vector2( 978, 242 )
+scale = Vector2( 2, 2 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="AnimatedSprite/StaticBody2D2"]
+position = Vector2( -18, 242 )
+scale = Vector2( 2, 2 )
+shape = SubResource( 3 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -10.0
+autoplay = true
+
+[node name="Sans" parent="." instance=ExtResource( 10 )]
+position = Vector2( 381, 243 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 10.0
+margin_top = 58.0
+margin_right = 208.0
+margin_bottom = 123.0
+text = "x:
+y:
+jump:
+"

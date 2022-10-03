@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Undertale - MEGALOVANIA {Resastered}.mp3-d3f0d232c98914152cd89e74f04b6b0a.mp3str"
+
+[deps]
+
+source_file="res://Music/Undertale - MEGALOVANIA {Resastered}.mp3"
+dest_files=[ "res://.import/Undertale - MEGALOVANIA {Resastered}.mp3-d3f0d232c98914152cd89e74f04b6b0a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snd_noise_ch1.wav-a23ac8a6b2ace6bde7a489e8e2ac1968.sample"
+
+[deps]
+
+source_file="res://Sounds/snd_noise_ch1.wav"
+dest_files=[ "res://.import/snd_noise_ch1.wav-a23ac8a6b2ace6bde7a489e8e2ac1968.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
