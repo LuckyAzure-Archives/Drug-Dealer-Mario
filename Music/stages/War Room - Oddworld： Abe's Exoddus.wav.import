@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/War Room - Oddworld： Abe's Exoddus.wav-50a11312a1413a8e6ab3961bf0679755.sample"
+
+[deps]
+
+source_file="res://Music/stages/War Room - Oddworld： Abe's Exoddus.wav"
+dest_files=[ "res://.import/War Room - Oddworld： Abe's Exoddus.wav-50a11312a1413a8e6ab3961bf0679755.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

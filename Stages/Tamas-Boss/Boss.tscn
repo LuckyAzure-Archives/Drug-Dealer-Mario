@@ -175,5 +175,8 @@ position = Vector2( 469, 116 )
 scale = Vector2( 5.765, 5.50148 )
 z_index = -100
 frames = SubResource( 1 )
-frame = 50
+frame = 19
 playing = true
+__meta__ = {
+"_edit_lock_": true
+}

@@ -10,7 +10,7 @@ var friction = 10
 var acceleration = 10
 const gravity = 1000
 
-var Ability = "Small"
+var Ability = "Medium"
 var Animations = "Idle"
 
 func _ready():
@@ -25,6 +25,10 @@ func animation(delta):
 	$Animations.get_node(Ability).animation = Animations
 	if Ability == "Small":
 		$SmallHitbox.disabled = false
+		$MediumHitbox.disabled = true
+	else:
+		$SmallHitbox.disabled = true
+		$MediumHitbox.disabled = false
 
 func get_input(delta):
 	Move.x = 0

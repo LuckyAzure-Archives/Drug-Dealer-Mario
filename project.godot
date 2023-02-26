@@ -19,6 +19,7 @@ config/icon="res://icon.png"
 
 Fade="*res://Scripts/Fade/Fade.tscn"
 Sound="*res://Scripts/Sound.gd"
+Global="*res://Global.gd"
 
 [debug]
 

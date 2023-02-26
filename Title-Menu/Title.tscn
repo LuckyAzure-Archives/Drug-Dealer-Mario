@@ -82,7 +82,7 @@ centered = false
 
 [node name="Torso" type="AnimatedSprite" parent="."]
 modulate = Color( 0.55, 0.55, 0.55, 1 )
-position = Vector2( 483, 521 )
+position = Vector2( 490, 530 )
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 2 )
 frame = 2
